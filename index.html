@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confere meu gabarito!</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="script.js" defer></script>
+</head>
+<header>
+    <div class="logo-container">
+        <a href="/index.html" class="logo-display">
+            extra<b>gabarito</b>
+        </a>
+    </div>
+</header>
+<body>
+    <div id="body-wrapper">
+        <div class="check-heading">
+            <div class="check-title">Conferir gabarito</div>
+            <div class="check-subtitle">Tenha acesso ao gabarito extraoficial, na hora que quiser.</div>
+            <div class="check-signature"><div>Desenvolvido por <b>Pedro Aquino</b></div></div>
+        </div>
+        <div class="check-display">
+            <div class="check-removable">
+                <div class="check-display-title">INSIRA SEU GABARITO</div>
+                <div class="check-display-types">
+                    <div class="selection-wrapper">
+                        <select name="simulado-selection" id="simulado-selection" onchange="selectionSetup()">
+                            <option value="presencial1">1º Simulado - Humanas</option>
+                        </select>
+                        <div class="message-iio">Gabarito</div>
+                    </div>
+                    <input type="submit" value="Conferir" id="top-submission" form="check-answers-form"></input>
+                </div>
+                <div class="check-display-wrapper">
+                    <form onsubmit="formSent()" name="check-answers-form" id="check-answers-form">
+                    </form>
+                </div>
+                <div id="submission-answers-wrapper"><input type="submit" value="Conferir" form="check-answers-form" id="submission-answers"></div>
+            </div>
+        </div>
+        <div class="append-data"></div>
+    </div>
+</body>
+<footer>
+    <div class="check-footer">
+        <div class="footer-title">Saiba Mais</div>
+        <div class="footer-bubble">
+            <div class="footer-subtitle">Como funciona?</div>
+            <div class="footer-content">A ferramenta Extragabarito compara as suas questões selecionadas com o gabarito mais recente (extraoficial/oficial) e te mostra o seu resultado no simulado em questão.</div>
+        </div>
+        <div class="footer-bubble">
+            <div class="footer-subtitle">Como foi criado?</div>
+            <div class="footer-content">A ferramenta Extragabarito foi criada por <b>Pedro Aquino</b> em 10 de Março de 2022 para auxiliar os alunos do Colégio Santo Agostinho - BH durante a verificação do gabarito dos simulados semanais.</div>
+        </div>
+        <div class="footer-bubble">
+            <div class="footer-subtitle">Quem controla?</div>
+            <div class="footer-content">Atualmente, quem tem o domínio e controle sobre o website Extragabarito é único e exclusivamente o criador, Pedro Aquino. Além disso, é importante ressaltar que o site não tem qualquer vínculo, legal ou não, com a instituição Colégio Santo Agostinho como um todo. O Extragabarito é mantido e financiado por uma única pessoa, Pedro Aquino.</div>
+        </div>
+        <div class="footer-title">Perguntas Frequentes</div>
+        <div class="footer-bubble">
+            <div class="footer-subtitle">Quem fornece os gabaritos ao site?</div>
+            <div class="footer-content"><p>Gabaritos considerados Extraoficiais são gabaritos construídos a partir das respostas disponíveis na internet, geralmente postados algumas horas depois do simulado acontecer.</p><p>Já os Gabaritos Oficiais são gabaritos veiculados pelos meios oficiais de comunicacão do Colégio, e são 100% precisos. Os Oficiais são postados alguns dias depois do simulado acontecer.</p><p><b>Todos os gabaritos estão sujeitos à alterações.</b></p></div>
+        </div>
+        <div class="footer-bubble">
+            <div class="footer-subtitle">O Extragabarito sabe quem sou eu?</div>
+            <div class="footer-content">Não coletamos nenhum dado do usuário.</div>
+        </div>
+        <div class="footer-bubble">
+            <div class="footer-subtitle">O Extragabarito guarda minhas respostas?</div>
+            <div class="footer-content">O processo de verificacão das respostas acontece todo no seu dispositivo. Não temos acesso nenhum à nenhuma informação dos usuários.</div>
+        </div>
+        <div class="footer-title">Contato</div>
+        <div class="footer-bubble" id="contato-bubble">
+            <div class="footer-content">Para contatar sobre erros e melhorias do Extragabarito, envie um email para: extragabarito@gmail.com</div>
+        </div>
+    </div>
+</footer>
+</html>
