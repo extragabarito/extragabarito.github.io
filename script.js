@@ -403,9 +403,9 @@ function selectionSetup() {
     }
 
     if (IIO == "oficial") {
-        var IIOMessage = "* Gabarito Oficial"
+        var IIOMessage = "* Oficial"
     } else {
-        var IIOMessage = "* Gabarito Extraoficial"
+        var IIOMessage = "* Extraoficial"
     }
 
     const typeIIO = document.querySelector('.message-iio')
