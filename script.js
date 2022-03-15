@@ -199,9 +199,12 @@ function formValidation(userAnswers) {
 
     if (selection.value == "presencial1") {
         var selectionGabarito = presencial1List
+    } else if (selection.value == "presencial2") {
+        var selectionGabarito = presencial2List
     } else if (selection.value == "testNull") {
         var selectionGabarito = testList
     }
+
 
     for (let sg = 0; sg < selectionGabarito.length; sg++) {
         if (selectionGabarito[sg] == userAnswers[sg]) {
