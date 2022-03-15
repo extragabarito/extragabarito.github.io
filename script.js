@@ -244,7 +244,7 @@ function calculateScore(userScore, answerTable) {
     const displayMessage = document.createElement('div')
     const scoreQuestions = document.createElement('div')
     const pctRendimento = document.createElement('div')
-    const messageList  = [["Desempenho Muito Ruim", "verybad-performance"], ["Desempenho Ruim", "bad-performance"], ["Desempenho Mediano", "medium-performance"], ["Desempenho Bom", "good-performance"], ["Desempenho Excelente", "excelent-performance"]]
+    const messageList  = [["Desempenho Insatisfatório", "verybad-performance"], ["Desempenho Abaixo da Média", "bad-performance"], ["Desempenho Mediano", "medium-performance"], ["Desempenho Bom", "good-performance"], ["Desempenho Excelente", "excelent-performance"]]
 
     if (userPercentage < 30) {
         var messageIndex = 0
