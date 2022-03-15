@@ -184,8 +184,8 @@ const wholeDisplay = document.querySelector('.check-display')
 
 ///////////////////////////////////////////////////////////////////////////
 
-const oficialsList = ["presencial1", "testNull"]
-const presencial2List = ["D", "C", "D", "B", "A", "A", "B", "A", "D", "E", "D", "E", "C", "A", "A", "B", "D", "A", "D", "D", "C", "B", "E", "B", "A", "A", "B", "D", "C", "E", "C", "E", "D", "D", "C", "B", "A", "D", "C", "B", "B", "A", "E", "E", "A", "A", "A", "E", "D", "C", "A", "D", "E", "A", "B", "B", "C", "B", "E", "B", "A", "E", "E", "C", "B", "A", "C", "B", "C", "C", "C", "C", "E", "D", "A", "E", "E", "D", "D", "D", "C", "D", "C", "E", "D", "E", "D", "C", "A", "A"]
+const oficialsList = ["presencial1", "testNull", "presencial2"]
+const presencial2List = ["D", "C", "D", "B", "A", "A", "B", "A", "D", "E", "D", "E", "C", "A", "B", "B", "D", "A", "D", "D", "C", "B", "E", "B", "A", "A", "B", "D", "C", "E", "C", "E", "D", "D", "C", "B", "A", "D", "C", "B", "B", "A", "E", "E", "A", "A", "A", "E", "D", "C", "A", "D", "E", "A", "B", "B", "C", "B", "E", "B", "A", "E", "E", "D", "B", "A", "C", "B", "C", "C", "C", "C", "E", "D", "A", "E", "E", "D", "D", "D", "C", "D", "C", "E", "D", "E", "D", "C", "A", "A"]
 const testList = ["N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N"]
 const presencial1List = ["A", "B", "D", "D", "N", "D", "D", "E", "C", "B", "C", "C", "A", "B", "C", "C", "C", "D", "D", "E", "D", "B", "E", "D", "A", "E", "D", "B", "B", "A", "D", "B", "D", "E", "D", "A", "D", "E", "B", "C", "B", "C", "A", "D", "C", "D", "D", "B", "B", "A", "C", "E", "B", "B", "B", "A", "E", "D", "E", "A", "A", "B", "B", "B", "C", "D", "D", "A", "D", "B", "B", "E", "B", "B", "C", "D", "E", "D", "E", "B", "C", "C", "D", "B", "A", "A", "B", "B", "A", "C"]
 
