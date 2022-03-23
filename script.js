@@ -184,7 +184,7 @@ const wholeDisplay = document.querySelector('.check-display')
 
 ///////////////////////////////////////////////////////////////////////////
 
-const oficialsList = ["presencial1", "testNull", "presencial2", "sas1ListING", "sas1ListESP"]
+const oficialsList = ["presencial1", "testNull", "presencial2", "sas1ING", "sas1ESP"]
 const sas1ListING = ["E", "E", "C", "E", "D", "E", "B", "A", "D", "E", "E", "B", "B", "D", "B", "B", "D", "D", "B", "B", "B", "A", "C", "A", "C", "A", "A", "A", "E", "A", "C", "E", "B", "B", "B", "D", "D", "C", "A", "D", "C", "D", "A", "C", "B", "A", "B", "E", "A", "A", "D", "E", "E", "D", "E", "E", "D", "C", "C", "C", "B", "C", "B", "C", "A", "E", "E", "E", "D", "A", "D", "A", "D", "C", "E", "E", "B", "C", "A", "E", "D", "E", "C", "A", "D", "A", "D", "C", "D", "B"]
 const sas1ListESP = ["C", "A", "E", "D", "A", "E", "B", "A", "D", "E", "E", "B", "B", "D", "B", "B", "D", "D", "B", "B", "B", "A", "C", "A", "C", "A", "A", "A", "E", "A", "C", "E", "B", "B", "B", "D", "D", "C", "A", "D", "C", "D", "A", "C", "B", "A", "B", "E", "A", "A", "D", "E", "E", "D", "E", "E", "D", "C", "C", "C", "B", "C", "B", "C", "A", "E", "E", "E", "D", "A", "D", "A", "D", "C", "E", "E", "B", "C", "A", "E", "D", "E", "C", "A", "D", "A", "D", "C", "D", "B"]
 const presencial2List = ["D", "C", "D", "B", "A", "A", "B", "A", "D", "E", "D", "E", "C", "A", "B", "B", "D", "A", "D", "D", "C", "B", "E", "B", "A", "A", "B", "D", "C", "E", "C", "E", "D", "D", "C", "B", "A", "D", "C", "B", "B", "A", "E", "E", "A", "A", "A", "E", "D", "C", "A", "D", "E", "A", "B", "B", "C", "B", "E", "B", "A", "E", "E", "D", "B", "A", "C", "B", "C", "C", "C", "C", "E", "D", "A", "E", "E", "D", "D", "D", "C", "D", "C", "E", "D", "E", "D", "C", "A", "A"]
