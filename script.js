@@ -203,10 +203,8 @@ function formValidation(userAnswers) {
         var selectionGabarito = presencial2List
     } else if (selection.value == "testNull") {
         var selectionGabarito = testList
-    } else if (selection.value == "sas1ING") {
-        var selectionGabarito = sas1ListING
-    } else if (selection.value == "sas1ESP") {
-        var selectionGabarito = sas1ListESP
+    } else if (selection.value == "presencial3") {
+        var selectionGabarito = presencial3List
     }
 
 
