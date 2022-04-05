@@ -410,12 +410,12 @@ function selectionSetup() {
     }
 
     if (IIO == "oficial") {
-        var IIOMessage = "* Oficial"
+        var IIOMessage = "GABARITO OFICIAL"
     } else {
-        var IIOMessage = "* Extraoficial"
+        var IIOMessage = "GABARITO EXTRAOFICIAL"
     }
 
-    const typeIIO = document.querySelector('.message-iio')
+    const typeIIO = document.querySelector('.check-display-title')
     typeIIO.innerHTML = IIOMessage
 }
 
