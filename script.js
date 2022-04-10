@@ -563,7 +563,10 @@ function createGraph(infoGraph) {
         var infoSize = infoGraph[0].length
     }
 
-    for (let nh = 1; nh < infoSize; nh++) {
+    for (let nh = 0; nh < infoSize; nh++) {
+        if (infoGraph[0][nh] == "Inglês") {
+            nh++
+        }
         const graphBubble =  document.createElement('div')
         const graphBar = document.createElement('div')
         const graphLegend = document.createElement('div')
