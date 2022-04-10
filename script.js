@@ -283,7 +283,7 @@ const wholeDisplay = document.querySelector('.check-display')
 ///////////////////////////////////////////////////////////////////////////
 
 const oficialsList = ["presencial1", "presencial2", "presencial3"]
-const exatasList = ["presencial2"]
+const exatasList = ["presencial2", "presencial4"]
 const humanasList = ["presencial1", "presencial3"]
 
 const testExatas = [["Ciências da Natureza", [0, 44]], ["Ciências Matemáticas", [45, 89]]]
@@ -291,6 +291,7 @@ const testHumanas = [["Linguagens e Códigos", [0, 44]], ["Ciências Humanas", [
 const exatasStructure = [["Física", [0, 14]], ["Química", [15, 29]], ["Biologia", [30, 44]], ["Matemática", [45, 89]]]
 const humanasStructure = [["Inglês", [0, 4]], ["Português", [5, 24]], ["Literatura", [25, 44]], ["História", [45, 59]], ["Geografia", [60, 74]], ["Filosofia", [75, 85]], ["Atualidades", [86, 89]]]
 
+const presencial4List = []
 const presencial3List = ["D", "A", "A", "C", "C", "B", "E", "C", "A", "D", "C", "C", "D", "C", "E", "B", "C", "E", "A", "B", "D", "E", "B", "D", "A", "E", "B", "D", "D", "B", "C", "A", "A", "A", "E", "D", "A", "D", "B", "A", "B", "A", "E", "D", "D", "A", "D", "A", "C", "B", "B", "E", "D", "D", "A", "C", "E", "E", "D", "A", "E", "C", "D", "C", "A", "D", "B", "E", "B", "B", "D", "B", "C", "D", "A", "A", "A", "B", "D", "A", "D", "A", "D", "E", "A", "B", "D", "C", "C", "D"]
 const presencial2List = ["D", "C", "D", "B", "A", "A", "B", "A", "D", "E", "D", "E", "C", "A", "B", "B", "D", "A", "D", "D", "C", "B", "E", "B", "A", "A", "B", "D", "C", "E", "C", "E", "D", "D", "C", "B", "A", "D", "C", "B", "B", "A", "E", "E", "A", "A", "A", "E", "D", "C", "A", "D", "E", "A", "B", "B", "C", "B", "E", "B", "A", "E", "E", "D", "B", "A", "C", "B", "C", "C", "C", "C", "E", "D", "A", "E", "E", "D", "D", "D", "C", "D", "C", "E", "D", "E", "D", "C", "A", "A"]
 const testList = ["N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N"]
@@ -365,6 +366,8 @@ function formValidation(userAnswers) {
         var selectionGabarito = testList
     } else if (selectionType == "presencial3") {
         var selectionGabarito = presencial3List
+    } else if (selectionType == "presencial4") {
+        var selectionGabarito = presencial4List
     }
 
     if (exatasList.includes(selectionType) || exatasList.includes(parallelHandler.innerHTML)) {
