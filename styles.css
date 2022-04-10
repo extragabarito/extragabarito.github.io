@@ -659,11 +659,21 @@ body {
 
   .dash-subject-sub, .dash-area-sub {
     padding-left: 20px !important;
+    font-size: 1.6rem !important;
   }
 
   .graph-bubble {
-    margin-left: 1% !important;
-    margin-right: 1% !important;
+    margin-left: 3px !important;
+    margin-right: 3px !important;
+  }
+
+  .graph-display {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+  .indicator-wrapper {
+    margin-right: 5px !important;
   }
 
   .parallel-bubble {
@@ -827,7 +837,7 @@ body {
   color: #003587;
   background-color: #eeeeee;
   border-radius: 10px;
-  width: 360px;
+  width: 320px;
   margin: 10px 20px;
 }
 
@@ -841,7 +851,7 @@ body {
 }
 
 .subject-answers {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   display: flex;
   font-weight: 600;
   padding-left: 10px;
@@ -849,19 +859,19 @@ body {
 
 .para-range {
   margin-left: 5px;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   height: auto;
   margin-top: auto;
   font-weight: 400;
 }
 
 .subject-pcts {
-  font-size: 3.5rem;
+  font-size: 3.2rem;
   font-weight: 600;
 }
 
 .subject-subtitle {
-  font-size: 2rem;
+  font-size: 1.7rem;
   padding: 0px 5px 0px;
 }
 
@@ -928,8 +938,8 @@ body {
   justify-content: center;
   padding: 5px;
   height: 95%;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .graph-bar {
@@ -956,7 +966,7 @@ body {
 }
 
 .indicator-numbers {
-  font-size: 0.5;
+  font-size: 0.7rem;
   color: black;
 }
 
