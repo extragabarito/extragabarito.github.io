@@ -282,9 +282,9 @@ const wholeDisplay = document.querySelector('.check-display')
 
 ///////////////////////////////////////////////////////////////////////////
 
-const oficialsList = ["SAS2", "SAS3", "presencial3", "presencial4"]
+const oficialsList = ["SAS2", "SAS3", "presencial5", "presencial4"]
 const exatasList = ["SAS3", "presencial4"]
-const humanasList = ["SAS2", "presencial3"]
+const humanasList = ["SAS2", "presencial5"]
 
 const testExatas = [["Ciências da Natureza", [0, 44]], ["Ciências Matemáticas", [45, 89]]]
 const testHumanas = [["Linguagens e Códigos", [0, 44]], ["Ciências Humanas", [45, 89]]]
@@ -292,7 +292,7 @@ const exatasStructure = [["Física", [0, 14]], ["Química", [15, 29]], ["Biologi
 const humanasStructure = [["Inglês", [0, 4]], ["Português", [5, 24]], ["Literatura", [25, 44]], ["História", [45, 59]], ["Geografia", [60, 74]], ["Filosofia", [75, 85]], ["Atualidades", [86, 89]]]
 
 const presencial4List = ["A", "C", "B", "B", "C", "E", "D", "B", "A", "D", "E", "C", "A", "D", "E", "D", "A", "E", "D", "C", "E", "C", "A", "D", "C", "N", "C", "B", "E", "D", "A", "D", "B", "E", "C", "A", "B", "D", "C", "A", "E", "D", "B", "B", "A", "E", "D", "B", "D", "C", "B", "B", "E", "C", "C", "A", "D", "E", "A", "C", "B", "E", "B", "E", "E", "D", "B", "C", "C", "D", "A", "A", "E", "B", "B", "C", "A", "C", "B", "B", "B", "D", "A", "E", "E", "C", "C", "C", "B", "C"]
-const presencial3List = ["D", "A", "A", "C", "C", "B", "E", "C", "A", "D", "C", "C", "D", "C", "E", "B", "C", "E", "A", "B", "D", "E", "B", "D", "A", "E", "B", "D", "D", "B", "C", "A", "A", "A", "E", "D", "A", "D", "B", "A", "B", "A", "E", "D", "D", "A", "D", "A", "C", "B", "B", "E", "D", "D", "A", "C", "E", "E", "D", "A", "E", "C", "D", "C", "A", "D", "B", "E", "B", "B", "D", "B", "C", "D", "A", "A", "A", "B", "D", "A", "D", "A", "D", "E", "A", "B", "D", "C", "C", "D"]
+const presencial5List = []
 const SAS3List = ["B", "D", "E", "E", "E", "A", "B", "A", "E", "A", "A", "D", "B", "E", "B", "D", "C", "B", "A", "A", "D", "C", "C", "B", "E", "E", "E", "E", "E", "A", "C", "E", "C", "B", "B", "A", "E", "C", "D", "C", "D", "B", "B", "C", "E", "C", "D", "E", "B", "A", "C", "B", "C", "E", "E", "C", "D", "D", "C", "B", "D", "B", "B", "C", "B", "A", "C", "B", "C", "D", "D", "D", "A", "C", "D", "C", "D", "B", "C", "D", "E", "B", "D", "B", "D", "B", "A", "B", "B", "D"]
 const testList = ["N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N"]
 const SAS2List = ["A", "C", "E", "A", "D", "B", "D", "A", "D", "D", "C", "B", "B", "E", "C", "C", "C", "B", "B", "A", "D", "E", "C", "B", "C", "C", "D", "C", "C", "C", "E", "A", "E", "E", "B", "B", "C", "C", "C", "D", "A", "C", "B", "B", "C", "B", "D", "B", "B", "E", "A", "C", "C", "E", "B", "E", "C", "E", "A", "C", "A", "B", "C", "A", "D", "E", "D", "B", "E", "D", "B", "D", "C", "D", "A", "B", "E", "B", "C", "E", "E", "D", "A", "D", "D", "D", "E", "C", "C", "D"]
@@ -364,8 +364,8 @@ function formValidation(userAnswers) {
         var selectionGabarito = SAS3List
     } else if (selectionType == "testNull") {
         var selectionGabarito = testList
-    } else if (selectionType == "presencial3") {
-        var selectionGabarito = presencial3List
+    } else if (selectionType == "presencial5") {
+        var selectionGabarito = presencial5List
     } else if (selectionType == "presencial4") {
         var selectionGabarito = presencial4List
     }
