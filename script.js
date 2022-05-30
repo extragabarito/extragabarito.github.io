@@ -282,9 +282,9 @@ const wholeDisplay = document.querySelector('.check-display')
 
 ///////////////////////////////////////////////////////////////////////////
 
-const oficialsList = ["SAS2", "SAS3", "presencial5", "presencial4"]
-const exatasList = ["SAS3", "presencial4"]
-const humanasList = ["SAS2", "presencial5"]
+const oficialsList = ["presencial5", "presencial4"]
+const exatasList = ["presencial6Cinza", "presencial6Branca", "presencial4"]
+const humanasList = ["presencial5"]
 
 const testExatas = [["Ciências da Natureza", [0, 44]], ["Ciências Matemáticas", [45, 89]]]
 const testHumanas = [["Linguagens e Códigos", [0, 44]], ["Ciências Humanas", [45, 89]]]
@@ -293,9 +293,9 @@ const humanasStructure = [["Inglês", [0, 4]], ["Português", [5, 24]], ["Litera
 
 const presencial4List = ["A", "C", "B", "B", "C", "E", "D", "B", "A", "D", "E", "C", "A", "D", "E", "D", "A", "E", "D", "C", "E", "C", "A", "D", "C", "N", "C", "B", "E", "D", "A", "D", "B", "E", "C", "A", "B", "D", "C", "A", "E", "D", "B", "B", "A", "E", "D", "B", "D", "C", "B", "B", "E", "C", "C", "A", "D", "E", "A", "C", "B", "E", "B", "E", "E", "D", "B", "C", "C", "D", "A", "A", "E", "B", "B", "C", "A", "C", "B", "B", "B", "D", "A", "E", "E", "C", "C", "C", "B", "C"]
 const presencial5List = ["A", "B", "E", "A", "E", "D", "E", "D", "C", "C", "C", "E", "D", "C", "B", "B", "E", "E", "D", "C", "D", "A", "B", "E", "C", "D", "D", "E", "C", "D", "C", "C", "C", "B", "D", "C", "E", "A", "B", "D", "D", "D", "A", "E", "E", "E", "B", "D", "C", "B", "C", "C", "B", "D", "D", "C", "B", "C", "B", "C", "C", "B", "A", "A", "D", "C", "E", "D", "B", "E", "C", "D", "C", "C", "D", "A", "B", "E", "B", "A", "D", "D", "B", "C", "C", "D", "E", "E", "C", "B"]
-const SAS3List = ["B", "D", "E", "E", "E", "A", "B", "A", "E", "A", "A", "D", "B", "E", "B", "D", "C", "B", "A", "A", "D", "C", "C", "B", "E", "E", "E", "E", "E", "A", "C", "E", "C", "B", "B", "A", "E", "C", "D", "C", "D", "B", "B", "C", "E", "C", "D", "E", "B", "A", "C", "B", "C", "E", "E", "C", "D", "D", "C", "B", "D", "B", "B", "C", "B", "A", "C", "B", "C", "D", "D", "D", "A", "C", "D", "C", "D", "B", "C", "D", "E", "B", "D", "B", "D", "B", "A", "B", "B", "D"]
+const prensencial6BrancaList = []
 const testList = ["N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N"]
-const SAS2List = ["A", "C", "E", "A", "D", "B", "D", "A", "D", "D", "C", "B", "B", "E", "C", "C", "C", "B", "B", "A", "D", "E", "C", "B", "C", "C", "D", "C", "C", "C", "E", "A", "E", "E", "B", "B", "C", "C", "C", "D", "A", "C", "B", "B", "C", "B", "D", "B", "B", "E", "A", "C", "C", "E", "B", "E", "C", "E", "A", "C", "A", "B", "C", "A", "D", "E", "D", "B", "E", "D", "B", "D", "C", "D", "A", "B", "E", "B", "C", "E", "E", "D", "A", "D", "D", "D", "E", "C", "C", "D"]
+const presencial6CinzaList = ["A", "C", "D", "C", "B", "B", "C", "B", "A", "B", "E", "E", "C", "B", "A", "A", "B", "D", "A", "B", "A", "B", "C", "B", "D", "B", "C", "E", "A", "E", "C", "A", "D", "C", "B", "E", "E", "D", "C", "B", "C", "E", "B", "D", "A", "C", "B", "D", "A", "B", "C", "C", "B ", "E", "B", "E", "C", "A", "D", "B", "B", "B", "B", "B", "B", "B", "D", "A", "D", "C", "D", "E", "B", "B", "A", "C", "A", "C", "E", "A", "B", "A", "C", "E", "E", "C", "B", "B", "C", "A"]
 
 ///////////////////////////////////////////////////////////////////////////
 
@@ -358,10 +358,10 @@ function formValidation(userAnswers) {
         var selectionType = parallelHandler.innerHTML
     }
 
-    if (selectionType == "SAS2") {
-        var selectionGabarito = SAS2List
-    } else if (selectionType == "SAS3") {
-        var selectionGabarito = SAS3List
+    if (selectionType == "presencial6Cinza") {
+        var selectionGabarito = presencial6CinzaList
+    } else if (selectionType == "sas2") {
+        var selectionGabarito = prensencial6BrancaList
     } else if (selectionType == "testNull") {
         var selectionGabarito = testList
     } else if (selectionType == "presencial5") {
