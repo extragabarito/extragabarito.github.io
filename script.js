@@ -282,17 +282,17 @@ const wholeDisplay = document.querySelector('.check-display')
 
 ///////////////////////////////////////////////////////////////////////////
 
-const oficialsList = ["presencial5", "presencial4", "presencial6Cinza", "presencial6Branca"]
-const exatasList = ["presencial6Cinza", "presencial6Branca", "presencial4"]
-const humanasList = ["presencial5"]
+const oficialsList = ["sas5ING","sas5ESP", "presencial6Cinza", "presencial6Branca"]
+const exatasList = ["presencial6Cinza", "presencial6Branca"]
+const humanasList = ["sas5ING","sas5ESP"]
 
 const testExatas = [["Ciências da Natureza", [0, 44]], ["Ciências Matemáticas", [45, 89]]]
 const testHumanas = [["Linguagens e Códigos", [0, 44]], ["Ciências Humanas", [45, 89]]]
 const exatasStructure = [["Física", [0, 14]], ["Química", [15, 29]], ["Biologia", [30, 44]], ["Matemática", [45, 89]]]
 const humanasStructure = [["Inglês", [0, 4]], ["Português", [5, 24]], ["Literatura", [25, 44]], ["História", [45, 59]], ["Geografia", [60, 74]], ["Filosofia", [75, 85]], ["Atualidades", [86, 89]]]
 
-const presencial4List = ["A", "C", "B", "B", "C", "E", "D", "B", "A", "D", "E", "C", "A", "D", "E", "D", "A", "E", "D", "C", "E", "C", "A", "D", "C", "N", "C", "B", "E", "D", "A", "D", "B", "E", "C", "A", "B", "D", "C", "A", "E", "D", "B", "B", "A", "E", "D", "B", "D", "C", "B", "B", "E", "C", "C", "A", "D", "E", "A", "C", "B", "E", "B", "E", "E", "D", "B", "C", "C", "D", "A", "A", "E", "B", "B", "C", "A", "C", "B", "B", "B", "D", "A", "E", "E", "C", "C", "C", "B", "C"]
-const presencial5List = ["A", "B", "E", "A", "E", "D", "E", "D", "C", "C", "C", "E", "D", "C", "B", "B", "E", "E", "D", "C", "D", "A", "B", "E", "C", "D", "D", "E", "C", "D", "C", "C", "C", "B", "D", "C", "E", "A", "B", "D", "D", "D", "A", "E", "E", "E", "B", "D", "C", "B", "C", "C", "B", "D", "D", "C", "B", "C", "B", "C", "C", "B", "A", "A", "D", "C", "E", "D", "B", "E", "C", "D", "C", "C", "D", "A", "B", "E", "B", "A", "D", "D", "B", "C", "C", "D", "E", "E", "C", "B"]
+const sas5ListING = ["E", "B", "A", "C", "D", "E", "B", "A", "E", "E", "B", "A", "C", "D", "B", "C", "C", "A", "C", "C", "B", "A", "D", "B", "E", "B", "D", "C", "E", "E", "E", "D", "D", "E", "C", "C", "B", "C", "D", "B", "E", "D", "D", "B", "C", "E", "D", "C", "E", "E", "E", "E", "E", "D", "B", "D", "C", "A", "C", "B", "B", "C", "B", "A", "A", "E", "A", "D", "B", "D", "C", "C", "E", "E", "C", "E", "A", "C", "C", "B", "C", "C", "C", "D", "A", "E", "E", "E", "C", "D"]
+const sas5ListESP = ["C", "D", "D", "C", "C", "E", "B", "A", "E", "E", "B", "A", "C", "D", "B", "C", "C", "A", "C", "C", "B", "A", "D", "B", "E", "B", "D", "C", "E", "E", "E", "D", "D", "E", "C", "C", "B", "C", "D", "B", "E", "D", "D", "B", "C", "E", "D", "C", "E", "E", "E", "E", "E", "D", "B", "D", "C", "A", "C", "B", "B", "C", "B", "A", "A", "E", "A", "D", "B", "D", "C", "C", "E", "E", "C", "E", "A", "C", "C", "B", "C", "C", "C", "D", "A", "E", "E", "E", "C", "D"]
 const presencial6BrancaList = ["B", "C", "A", "E", "B", "N", "C", "C", "B", "B", "D", "A", "B", "C", "A", "E", "B", "A", "C", "B", "E", "B", "B", "D", "E", "D", "E", "C", "B", "E", "D", "C", "E", "E", "D", "C", "A", "B", "N", "D", "E", "C", "C", "B", "E", "B", "C", "B", "B", "B", "D", "D", "B", "A", "B", "C", "B", "E", "E", "B", "B", "A", "C", "B", "B", "D", "C", "A", "A", "C", "B", "A", "D", "E", "C", "C", "E", "B", "B", "C", "C", "C", "B", "A", "D", "A", "C", "E", "A", "B"]
 const testList = ["N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N"]
 const presencial6CinzaList = ["A", "C", "D", "C", "B", "B", "C", "B", "A", "B", "E", "N", "C", "B", "A", "C", "B", "E", "B", "B", "A", "B", "D", "E", "D", "B", "C", "E", "E", "E", "C", "A", "D", "C", "B", "E", "E", "D", "C", "B", "C", "E", "E", "D", "N", "C", "B", "D", "A", "B", "C", "C", "B", "E", "B", "E", "C", "A", "D", "B", "B", "B", "B", "B", "B", "B", "D", "A", "D", "C", "D", "E", "B", "B", "A", "C", "A", "C", "E", "A", "B", "A", "C", "C", "E", "C", "B", "B", "C", "A"]
@@ -364,10 +364,10 @@ function formValidation(userAnswers) {
         var selectionGabarito = presencial6BrancaList
     } else if (selectionType == "testNull") {
         var selectionGabarito = testList
-    } else if (selectionType == "presencial5") {
-        var selectionGabarito = presencial5List
-    } else if (selectionType == "presencial4") {
-        var selectionGabarito = presencial4List
+    } else if (selectionType == "sas5ING") {
+        var selectionGabarito = sas5ListENG
+    } else if (selectionType == "sas5ESP") {
+        var selectionGabarito = sas5ListESP
     }
 
     if (exatasList.includes(selectionType) || exatasList.includes(parallelHandler.innerHTML)) {
