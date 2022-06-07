@@ -365,7 +365,7 @@ function formValidation(userAnswers) {
     } else if (selectionType == "testNull") {
         var selectionGabarito = testList
     } else if (selectionType == "sas5ING") {
-        var selectionGabarito = sas5ListENG
+        var selectionGabarito = sas5ListING
     } else if (selectionType == "sas5ESP") {
         var selectionGabarito = sas5ListESP
     }
