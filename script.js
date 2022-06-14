@@ -282,8 +282,8 @@ const wholeDisplay = document.querySelector('.check-display')
 
 ///////////////////////////////////////////////////////////////////////////
 
-const oficialsList = ["sas5ING","sas5ESP", "presencial6Cinza", "presencial6Branca"]
-const exatasList = ["presencial6Cinza", "presencial6Branca"]
+const oficialsList = ["sas5ING","sas5ESP", "sas6"]
+const exatasList = ["sas6"]
 const humanasList = ["sas5ING","sas5ESP"]
 
 const testExatas = [["Ciências da Natureza", [0, 44]], ["Ciências Matemáticas", [45, 89]]]
@@ -293,10 +293,8 @@ const humanasStructure = [["Inglês", [0, 4]], ["Português", [5, 24]], ["Litera
 
 const sas5ListING = ["E", "B", "A", "C", "D", "E", "B", "A", "E", "E", "B", "A", "C", "D", "B", "C", "C", "A", "C", "C", "B", "A", "D", "B", "E", "B", "D", "C", "E", "E", "E", "D", "D", "E", "C", "C", "B", "C", "D", "B", "E", "D", "D", "B", "C", "E", "D", "C", "E", "E", "E", "E", "E", "D", "B", "D", "C", "A", "C", "B", "B", "C", "B", "A", "A", "E", "A", "D", "B", "D", "C", "C", "E", "E", "C", "E", "A", "C", "C", "B", "C", "C", "C", "D", "A", "E", "E", "E", "C", "D"]
 const sas5ListESP = ["C", "D", "D", "C", "C", "E", "B", "A", "E", "E", "B", "A", "C", "D", "B", "C", "C", "A", "C", "C", "B", "A", "D", "B", "E", "B", "D", "C", "E", "E", "E", "D", "D", "E", "C", "C", "B", "C", "D", "B", "E", "D", "D", "B", "C", "E", "D", "C", "E", "E", "E", "E", "E", "D", "B", "D", "C", "A", "C", "B", "B", "C", "B", "A", "A", "E", "A", "D", "B", "D", "C", "C", "E", "E", "C", "E", "A", "C", "C", "B", "C", "C", "C", "D", "A", "E", "E", "E", "C", "D"]
-const presencial6BrancaList = ["B", "C", "A", "E", "B", "N", "C", "C", "B", "B", "D", "A", "B", "C", "A", "E", "B", "A", "C", "B", "E", "B", "B", "D", "E", "D", "E", "C", "B", "E", "D", "C", "E", "E", "D", "C", "A", "B", "N", "D", "E", "C", "C", "B", "E", "B", "C", "B", "B", "B", "D", "D", "B", "A", "B", "C", "B", "E", "E", "B", "B", "A", "C", "B", "B", "D", "C", "A", "A", "C", "B", "A", "D", "E", "C", "C", "E", "B", "B", "C", "C", "C", "B", "A", "D", "A", "C", "E", "A", "B"]
 const testList = ["N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N"]
-const presencial6CinzaList = ["A", "C", "D", "C", "B", "B", "C", "B", "A", "B", "E", "N", "C", "B", "A", "C", "B", "E", "B", "B", "A", "B", "D", "E", "D", "B", "C", "E", "E", "E", "C", "A", "D", "C", "B", "E", "E", "D", "C", "B", "C", "E", "E", "D", "N", "C", "B", "D", "A", "B", "C", "C", "B", "E", "B", "E", "C", "A", "D", "B", "B", "B", "B", "B", "B", "B", "D", "A", "D", "C", "D", "E", "B", "B", "A", "C", "A", "C", "E", "A", "B", "A", "C", "C", "E", "C", "B", "B", "C", "A"]
-
+const sas6List = ["E", "C", "C", "C", "E", "D", "B", "E", "C", "C", "E", "E", "A", "D", "E", "D", "A", "B", "D", "C", "D", "C", "C", "E", "C", "B", "D", "A", "E", "C", "B", "E", "B", "C", "C", "C", "A", "C", "A", "D", "D", "B", "A", "C", "E", "D", "A", "B", "C", "E", "E", "C", "C", "B", "C", "A", "E", "E", "B", "B", "D", "E", "E", "E", "C", "C", "A", "D", "B", "B", "D", "E", "C", "B", "C", "A", "C", "B", "B", "D", "A", "B", "D", "E", "A", "A", "D", "C", "D", "D"]
 ///////////////////////////////////////////////////////////////////////////
 
 function preGame(answerTable) {
@@ -358,10 +356,8 @@ function formValidation(userAnswers) {
         var selectionType = parallelHandler.innerHTML
     }
 
-    if (selectionType == "presencial6Cinza") {
-        var selectionGabarito = presencial6CinzaList
-    } else if (selectionType == "presencial6Branca") {
-        var selectionGabarito = presencial6BrancaList
+    if (selectionType == "sas6") {
+        var selectionGabarito = sas6List
     } else if (selectionType == "testNull") {
         var selectionGabarito = testList
     } else if (selectionType == "sas5ING") {
