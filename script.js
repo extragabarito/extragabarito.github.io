@@ -282,19 +282,19 @@ const wholeDisplay = document.querySelector('.check-display')
 
 ///////////////////////////////////////////////////////////////////////////
 
-const oficialsList = ["sas5ING","sas5ESP", "sas6"]
-const exatasList = ["sas6"]
-const humanasList = ["sas5ING","sas5ESP"]
+const oficialsList = ["Cinza2","Branco2"]
+const exatasList = []
+const humanasList = ["Cinza2","Branco2"]
 
 const testExatas = [["Ciências da Natureza", [0, 44]], ["Ciências Matemáticas", [45, 89]]]
 const testHumanas = [["Linguagens e Códigos", [0, 44]], ["Ciências Humanas", [45, 89]]]
 const exatasStructure = [["Física", [0, 14]], ["Química", [15, 29]], ["Biologia", [30, 44]], ["Matemática", [45, 89]]]
 const humanasStructure = [["Inglês", [0, 4]], ["Português", [5, 24]], ["Literatura", [25, 44]], ["História", [45, 59]], ["Geografia", [60, 74]], ["Filosofia", [75, 85]], ["Atualidades", [86, 89]]]
 
-const sas5ListING = ["E", "B", "A", "C", "D", "E", "B", "A", "E", "E", "B", "A", "C", "D", "B", "C", "C", "A", "C", "C", "B", "A", "D", "B", "E", "B", "D", "C", "E", "E", "E", "D", "D", "E", "C", "C", "B", "C", "D", "B", "E", "D", "D", "B", "C", "E", "D", "C", "E", "E", "E", "E", "E", "D", "B", "D", "C", "A", "C", "B", "B", "C", "B", "A", "A", "E", "A", "D", "B", "D", "C", "C", "E", "E", "C", "E", "A", "C", "C", "B", "C", "C", "C", "D", "A", "E", "E", "E", "C", "D"]
-const sas5ListESP = ["C", "D", "D", "C", "C", "E", "B", "A", "E", "E", "B", "A", "C", "D", "B", "C", "C", "A", "C", "C", "B", "A", "D", "B", "E", "B", "D", "C", "E", "E", "E", "D", "D", "E", "C", "C", "B", "C", "D", "B", "E", "D", "D", "B", "C", "E", "D", "C", "E", "E", "E", "E", "E", "D", "B", "D", "C", "A", "C", "B", "B", "C", "B", "A", "A", "E", "A", "D", "B", "D", "C", "C", "E", "E", "C", "E", "A", "C", "C", "B", "C", "C", "C", "D", "A", "E", "E", "E", "C", "D"]
+const cinza2List = ["E", "B", "A", "C", "D", "E", "B", "A", "E", "E", "B", "A", "C", "D", "B", "C", "C", "A", "C", "C", "B", "A", "D", "B", "E", "B", "D", "C", "E", "E", "E", "D", "D", "E", "C", "C", "B", "C", "D", "B", "E", "D", "D", "B", "C", "E", "D", "C", "E", "E", "E", "E", "E", "D", "B", "D", "C", "A", "C", "B", "B", "C", "B", "A", "A", "E", "A", "D", "B", "D", "C", "C", "E", "E", "C", "E", "A", "C", "C", "B", "C", "C", "C", "D", "A", "E", "E", "E", "C", "D"]
+const branco2List = ["C", "D", "D", "C", "C", "E", "B", "A", "E", "E", "B", "A", "C", "D", "B", "C", "C", "A", "C", "C", "B", "A", "D", "B", "E", "B", "D", "C", "E", "E", "E", "D", "D", "E", "C", "C", "B", "C", "D", "B", "E", "D", "D", "B", "C", "E", "D", "C", "E", "E", "E", "E", "E", "D", "B", "D", "C", "A", "C", "B", "B", "C", "B", "A", "A", "E", "A", "D", "B", "D", "C", "C", "E", "E", "C", "E", "A", "C", "C", "B", "C", "C", "C", "D", "A", "E", "E", "E", "C", "D"]
 const testList = ["N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N", "N"]
-const sas6List = ["E", "C", "C", "C", "E", "D", "B", "E", "C", "C", "E", "E", "A", "D", "E", "D", "A", "B", "D", "C", "D", "C", "C", "E", "C", "B", "D", "A", "E", "C", "B", "E", "B", "C", "C", "C", "A", "C", "A", "D", "D", "B", "A", "C", "E", "D", "A", "B", "C", "E", "E", "C", "C", "B", "C", "A", "E", "E", "B", "B", "D", "E", "E", "E", "C", "C", "A", "D", "B", "B", "D", "E", "C", "B", "C", "A", "C", "B", "B", "D", "A", "B", "D", "E", "A", "A", "D", "C", "D", "D"]
+
 ///////////////////////////////////////////////////////////////////////////
 
 function preGame(answerTable) {
@@ -356,15 +356,13 @@ function formValidation(userAnswers) {
         var selectionType = parallelHandler.innerHTML
     }
 
-    if (selectionType == "sas6") {
-        var selectionGabarito = sas6List
+    if (selectionType == "Branco2") {
+        var selectionGabarito = branco2List
     } else if (selectionType == "testNull") {
         var selectionGabarito = testList
-    } else if (selectionType == "sas5ING") {
-        var selectionGabarito = sas5ListING
-    } else if (selectionType == "sas5ESP") {
-        var selectionGabarito = sas5ListESP
-    }
+    } else if (selectionType == "Cinza2") {
+        var selectionGabarito = cinza2List
+    } 
 
     if (exatasList.includes(selectionType) || exatasList.includes(parallelHandler.innerHTML)) {
         infoHandler.innerHTML = "exatas"
