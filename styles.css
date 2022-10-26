@@ -18,6 +18,10 @@ body {
   background-color: white;
 }
 
+#body-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
 #body-wrapper {
   overflow: hidden;
   position: relative;
