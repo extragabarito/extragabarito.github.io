@@ -1,0 +1,29 @@
+{
+  "name": "Extragabarito",
+  "short_name": "EG",
+  "lang": "en-US",
+  "start_url": "/extragabarito.com",
+  "display": "fullscreen",
+  "theme_color": "003587",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "favicon"
+    },
+    {
+      "src": "favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "90x90",
+      "type": "image/png"
+    }
+  ]
+}
